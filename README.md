@@ -1,1 +1,1 @@
-This package provides a SocketCAN bridge with configurable CAN-ID filtering, specifically designed for joint motor communication.
+This package provides a CAN bridge for Robostore.
