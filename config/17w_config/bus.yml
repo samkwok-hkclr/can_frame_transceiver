@@ -1,0 +1,26 @@
+options:
+  dcf_path: "@BUS_CONFIG_PATH@"
+
+master:
+  node_id: 127
+  driver: "ros2_canopen::MasterDriver"
+  package: "canopen_master_driver"
+  baud_rate: 1000
+  heartbeat_consumer: true
+  heartbeat_producer: 1000
+  boot_timeout: 10000
+  # sync_period: 100000 # 100ms
+
+defaults:
+  heartbeat_consumer: true
+  heartbeat_producer: 1000
+  
+nodes:
+  canopen_module:
+    node_id: 0x55
+    dcf: "canopen_module.eds"
+    driver: "ros2_canopen::ProxyDriver" 
+    package: "canopen_proxy_driver"
+    reset_communication: false
+    boot: false
+    sdo_timeout_ms: 80

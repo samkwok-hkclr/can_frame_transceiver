@@ -1,0 +1,1 @@
+canopen_module.eds version: 20250627
