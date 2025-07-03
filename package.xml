@@ -4,7 +4,7 @@
   <name>can_transceiver</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="mskwok@hkcle.hk">kms</maintainer>
+  <maintainer email="mskwok@hkclr.hk">mskwok</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
